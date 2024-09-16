@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Products from "../components/Products";
+
 
 import Card from "../components/Card";
 import img1 from "../images/toolstore/key-chain.png";
@@ -18,6 +18,7 @@ import meet1 from "../images/toolstore/meet-us1.png";
 import meet2 from "../images/toolstore/meet-us2.png";
 
 const HomePage = () => {
+
   return (
     // <Products />
     <main>
@@ -28,7 +29,7 @@ const HomePage = () => {
         >
           Calle Anselmo Solar 52
         </Link>
-        <Link to="mailto:correo@gmail.com">Envianos un Email</Link>
+        <Link to="mailto:correo@gmail.com">Envíanos un Email</Link>
 
         <Link to="">984 70 09 04</Link>
       </section>
@@ -37,8 +38,8 @@ const HomePage = () => {
         <h3>FERRETERIA CON 50 AÑOS DE HISTORIA</h3>
         <h1>Nuestros Productos</h1>
         <p>
-          <strong>Tenemos todo lo que necesita</strong> ¿Lo duda? Ven a
-          visitarnos y encontrá exactamente lo que está buscando
+          <strong>Tenemos todo lo que necesita.</strong> ¿Lo duda? Ven a
+          visitarnos y encuentra exactamente lo que está buscando.
         </p>
       </section>
       <section className="section-tours">
@@ -92,27 +93,28 @@ const HomePage = () => {
         <h3>PROFESIONALIDAD Y EXCELENCIA</h3>
         <h2>Ferretería en Gijón</h2>
         <div className="professionalism-container">
-            <p>
-              Si necesitas hacer una copia de una llave en Gijón, ¡estás en el
-              lugar correcto! Realizamos copias de llaves para cualquier tipo de
-              cerradura. También puedes encontrar una amplia variedad de
-              cerraduras para puertas y armarios en nuestra tienda. Además,
-              ofrecemos una selección de pinturas de calidad, así como productos
-              de droguería y todo tipo de menaje del hogar. No nos olvidamos de
-              las herramientas. Disponemos de una amplia variedad de herramientas
-              de calidad para todo tipo de proyectos, incluyendo eléctricas y de
-              batería. También encontrarás una selección de productos de
-              decoración para el hogar, como cuadros, espejos y objetos
-              decorativos. Por otro lado, si necesitas cualquier pieza de
-              fontanería, ¡no busques más ! Ofrecemos multitud de productos de
-              fontanería, como tuberías, grifos y accesorios para baño y cocina.
-              También contamos con productos de grifería de calidad para todo tipo
-              de necesidades. Si necesitas algo específico que no encuentras en
-              nuestra tienda, haremos todo lo posible por conseguirlo para ti. Te
-              esperamos en nuestra ferretería en Gijón.
-            </p>
+          <p>
+            Si necesitas hacer una copia de una llave en Gijón, ¡estás en el
+            lugar correcto! Realizamos copias de llaves para cualquier tipo de
+            cerradura. También puedes encontrar una amplia variedad de
+            cerraduras para puertas y armarios en nuestra tienda. Además,
+            ofrecemos una selección de pinturas de calidad, así como productos
+            de droguería y todo tipo de menaje del hogar. No nos olvidamos de
+            las herramientas. Disponemos de una amplia variedad de herramientas
+            de calidad para todo tipo de proyectos, incluyendo eléctricas y de
+            batería. También encontrarás una selección de productos de
+            decoración para el hogar, como cuadros, espejos y objetos
+            decorativos. Por otro lado, si necesitas cualquier pieza de
+            fontanería, ¡no busques más ! Ofrecemos multitud de productos de
+            fontanería, como tuberías, grifos y accesorios para baño y cocina.
+            También contamos con productos de grifería de calidad para todo tipo
+            de necesidades. Si necesitas algo específico que no encuentras en
+            nuestra tienda, haremos todo lo posible por conseguirlo para ti. Te
+            esperamos en nuestra ferretería en Gijón.
+          </p>
           <div className="container-tools">
-            <div><img src={tool1} alt="Imagen herramientas" className="img1" />
+            <div>
+              <img src={tool1} alt="Imagen herramientas" className="img1" />
               <img src={tool2} alt="Imagen herramientas" className="img2" />
             </div>
             <img src={prices} alt="Mensaje precios" className="img3" />
@@ -127,9 +129,8 @@ const HomePage = () => {
             <p>
               Si necesitas hacer una copia de una llave en Gijón, ¡estás en el
               lugar correcto! <strong></strong>Realizamos copias de llaves para
-              cualquier tipo de. También puedes encontrar una amplia
-              variedad de cerraduras para puertas y armarios en nuestra tienda.
-              Además,
+              cualquier tipo de. También puedes encontrar una amplia variedad de
+              cerraduras para puertas y armarios en nuestra tienda. Además,
               <strong>ofrecemos una selección de pinturas de calidad</strong>,
               así como productos de droguería y todo tipo de menaje del hogar.
               No nos olvidamos de las herramientas.{" "}
@@ -160,33 +161,23 @@ const HomePage = () => {
           <div className="check-container">
             <div className="check-element">
               <img src={img8} alt="Logo check" className="icon" />
-              <p>
-                Reparaciones
-              </p>
+              <p>Reparaciones</p>
             </div>
             <div className="check-element">
               <img src={img8} alt="Logo check" className="icon" />
-              <p>
-                Bricolaje
-              </p>
+              <p>Bricolaje</p>
             </div>
             <div className="check-element">
               <img src={img8} alt="Logo check" className="icon" />
-              <p>
-                Decoración
-              </p>
+              <p>Decoración</p>
             </div>
             <div className="check-element">
-
               <img src={img8} alt="Logo check" className="icon" />
-              <p>
-                Obra nueva
-              </p>
+              <p>Obra nueva</p>
             </div>
           </div>
         </article>
       </section>
-
 
       <section className="meet-us">
         <h3>Ferretería en Gijón</h3>
@@ -194,13 +185,12 @@ const HomePage = () => {
           <h2>Conoce Nuestra Ferretería</h2>
           <Link to="/contact">Más Info</Link>
         </div>
-
-        <div className="meet-us__img-container">
-          <img src={meet1} alt="" />
-          <img src={meet2} alt="" />
-          <img src={meet1} alt="" />
-          <img src={meet2} alt="" />
-        </div>
+          <div className="images-container">
+            <img src={meet1} alt="" />
+            <img src={meet2} alt="" />
+            <img src={meet1} alt="" />
+            <img src={meet2} alt="" />
+          </div>
       </section>
     </main>
   );
